@@ -1,0 +1,7 @@
+[Template]
+Template Name=Save Page -> Complete
+Description=Save the complete Web page including html, images, flash, css, javascript etc...
+File Types=.htm,.html,.shtm,.shtml,.asp,.aspx,.css,.xml,.xsl,.cfm,.htx,.js,.nsf,.phtml,.frm,.nsf,.jsp,.php,.php3,.wml,.gif,.jpg,.jpeg,.jpe,.png,.bmp,.wav,.au,.snd,.mid,.midi,.mp3,.ram,.aiff,.mov,.avi,.mpeg,.mpe,.mpg,.spl,.dpr,.swf
+Page Location=2
+Resource Location=2
+Depth=0

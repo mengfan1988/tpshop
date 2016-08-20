@@ -1,0 +1,99 @@
+<extend name="Index/index" />
+<block name="con">
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">属性列表</h1>
+    </div>
+</div>
+<div class="alert alert-success" style="display:none">
+
+</div>
+<div class="alert alert-danger" style="display:none">
+
+</div>
+<script type="text/javascript" src="__PUBLIC__/Admin/js/style.js">
+
+    </script>
+
+<style type="text/css">
+    .shuxingzhi span{
+        display:inline-block;
+        width:70px;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row">
+                    <div class="col-sm-6">
+					<form action="<{:U('Admin/Style/index')}>">
+                    <div class="dataTables_length" id="dataTables-example_length"><label> 
+                    </div></div><div class="col-sm-6"><div id="dataTables-example_filter" class="dataTables_filter">
+                        </div></div></div><div class="row"><div class="col-sm-12">
+                        <table class="shuxingbiao table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" role="grid" aria-describedby="dataTables-example_info">
+                        </form>
+                        <thead>
+                            <tr role="row">
+                            <th class="sorting_asc" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 155px;">属性</th>
+
+                            <th class="sorting" aria-label="Browser: activate to sort column ascending" style="width: 180px;">属性值</th></tr>
+                            
+                        </thead>
+                        <tbody>
+							<?php 
+                                foreach($styles as $v){?>
+                                 <tr class="gradeA odd" role="row">
+                                    <td class="sorting_1 shuxing" ><span keys='<?php echo $v[id]?>' guanxi="0"><?php echo $v['name']?></span></td>
+                                        <td class="shuxingzhi">
+                                        <?php  foreach($v['value'] as $vv){?>
+                                            <span keys='<?php echo $vv['id']?>' guanxi="1"><?php echo $vv['name']?></span>          
+                                        <?php }?>
+                                        </td>
+                                
+                                </tr>
+
+                            <?php }?>
+                        	
+							</foreach>
+                        </tbody>
+                    </table></div></div>
+
+				<style type="text/css">
+                        #pages a,#pages span{
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            color: #337ab7;
+                            float: left;
+                            line-height: 1.42857;
+                            margin-left: -1px;
+                            padding: 6px 12px;
+                            position: relative;
+                            text-decoration: none;
+                        }
+                        #pages span{
+                            background:#337ab7;
+                            color:white;
+                        }
+                    </style>
+                    <div class="row"><div class="col-sm-6"></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate">
+                        <div id="pages">
+                        <{$pages}>
+                        </div>
+                </div>
+               
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+       
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+ 
+   
+</block>

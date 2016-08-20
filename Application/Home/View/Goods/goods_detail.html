@@ -1,0 +1,278 @@
+<extend name="public:base" />
+<!-- =====================================Css引入=============================================== -->
+<block name="link">
+
+    <link href="__PUBLIC__/Home/Css/prod-detail_goodsdetail.css" rel="stylesheet" type="text/css">
+
+</block>
+
+<!-- ================================商品详情======================================== -->
+<block name="shopcar">
+    <div id="content" class="cl">
+        <input type="hidden" name="pageNavMappingIndex" id="pageNavMappingIndex" value="0">
+        <input type="hidden" id="preview" name="preview" value="">
+        <input type="hidden" id="salePrice" name="salePrice" value="2498">
+
+        <div class="wrapper">
+            <div class="crumbs">您的位置:<a class="first" href="http://shop.vivo.com.cn/">首页</a><b></b>
+                <a href="http://shop.vivo.com.cn/product/phone">手机产品</a>
+                <b></b><span>X7</span></div>
+        </div>
+        <div class="prod-container">
+            <div class="wrapper">
+                <div class="prod-container-top cl">
+                    <div class="prod-container-left">
+                        <div id="j_SpecImgs" class="figure">
+                            <ul id="bigImgUl">
+                                <li style="display: block; opacity: 1; z-index: 9;"><img src="./detail_files/4079_1469671328058_530x530.png" alt="商品图片"></li>
+                                <li style="z-index: 1; opacity: 0; display: none;"><img src="./detail_files/4079_1467872157547_530x530.png" alt="商品图片"></li>
+                                <li style="z-index: 1; opacity: 0; display: none;"><img src="./detail_files/4079_1467872158157_530x530.png" alt="商品图片"></li>
+                                <li style="z-index: 1; opacity: 0; display: none;"><img src="./detail_files/4079_1467872158596_530x530.png" alt="商品图片"></li>
+                            </ul>
+                        </div>
+                        <div id="j_SpecItems" class="spec-items">
+                            <ul class="cl" id="smallImgUl">
+                                <li class="current"><a href="http://shop.vivo.com.cn/product/9927#"><img src="./detail_files/4079_1469671328058_250x250.png"></a></li>
+                                <li><a href="http://shop.vivo.com.cn/product/9927#"><img src="./detail_files/4079_1467872157547_250x250.png"></a></li>
+                                <li><a href="http://shop.vivo.com.cn/product/9927#"><img src="./detail_files/4079_1467872158157_250x250.png"></a></li>
+                                <li><a href="http://shop.vivo.com.cn/product/9927#"><img src="./detail_files/4079_1467872158596_250x250.png"></a></li>
+                            </ul>
+                        </div>
+                        <div class="favor">
+                            <ul class="cl">
+                                <li class="collect"><a id="j_CollectTrigger" href="javascript:;">收藏商品（<span id="favCount">28798</span>人收藏）</a></li>
+                                <li id="J_Share">分享
+                                    <div class="share-box hidden">
+                                        <a title="分享到新浪微博" target="_blank" href="http://service.t.sina.com.cn/share/share.php?title=%E3%80%90%E3%80%90%E7%83%AD%E9%94%80%E6%96%B0%E6%9C%BA%E3%80%91X7%E3%80%91%EF%BC%8C%E9%94%80%E5%94%AE%E4%BB%B7:%20%C2%A52498.00%EF%BC%88%E6%9D%A5%E8%87%AAvivo%E5%AE%98%E6%96%B9%E5%95%86%E5%9F%8E%EF%BC%89%E3%80%82&amp;url=http://shop.vivo.com.cn/product/9927&amp;pic=http://files.shop.vivo.com.cn/vivoshop/commodity/77/4077_1469671316147_530x530.png?1442932368#h" class="sina"><b></b></a>
+                                        <a title="分享到腾讯微博" target="_blank" href="http://v.t.qq.com/share/share.php?title=%E3%80%90%E3%80%90%E7%83%AD%E9%94%80%E6%96%B0%E6%9C%BA%E3%80%91X7%E3%80%91%EF%BC%8C%E9%94%80%E5%94%AE%E4%BB%B7:%20%C2%A52498.00%EF%BC%88%E6%9D%A5%E8%87%AAvivo%E5%AE%98%E6%96%B9%E5%95%86%E5%9F%8E%EF%BC%89%E3%80%82&amp;url=http://shop.vivo.com.cn/product/9927&amp;pic=http://files.shop.vivo.com.cn/vivoshop/commodity/77/4077_1469671316147_530x530.png?1442932368#h" class="tencent"><b></b></a>
+                                        <a id="j_shareToRenren" title="分享到人人网" target="_blank" href="http://widget.renren.com/dialog/share?resourceUrl=http://shop.vivo.com.cn/product/9927;srcUrl=http://shop.vivo.com.cn/&amp;title=%E3%80%90%E3%80%90%E7%83%AD%E9%94%80%E6%96%B0%E6%9C%BA%E3%80%91X7%E3%80%91%EF%BC%8C%E9%94%80%E5%94%AE%E4%BB%B7:%20%C2%A52498.00%EF%BC%88%E6%9D%A5%E8%87%AAvivo%E5%AE%98%E6%96%B9%E5%95%86%E5%9F%8E%EF%BC%89%E3%80%82&amp;pic=http://files.shop.vivo.com.cn/vivoshop/commodity/77/4077_1469671316147_530x530.png?1442932368#h" class="renren"><b></b></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="prod-container-right">
+                        <h1>【热销新机】X7</h1>
+                        <small>【宋仲基代言同款手机】4G运存+64G内存，高通八核处理器，支持闪充，实时混响音效，1600W柔光自拍，照亮你的美！</small>
+                        <ul class="summary-price">
+                            <li>
+                                <span class="now-price"><dfn>¥</dfn>2498.00</span>
+                            </li>
+                            <li>
+                                <label>赠品:</label>
+                                <ul class="gift-box">
+                                    <li title="【飞蝗】蓝牙自拍杆" sku-id="1897">
+                                        <a href="http://shop.vivo.com.cn/product/97?giftSkuid=1897" target="_blank"><img src="./detail_files/1897_1453712386055_250x250.png"></a>
+                                        <span style="color:#666">X 1</span>
+                                    </li>
+                                    <li title="【现代（HYUNDAI）】蓝牙音箱" sku-id="1944">
+                                        <a href="http://shop.vivo.com.cn/product/129?giftSkuid=1944" target="_blank"><img src="./detail_files/1944_1453712407491_250x250.png"></a>
+                                        <span style="color:#666">X 1</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="prod-detail-form" method="post">
+                            <dl class="prod-params cl">
+                                <dt>颜色：</dt>
+                                <dd>
+                                    <ul class="color-box">
+                                        <li class="sub-sku" marketable="1" sku-store="101002" sku-id="4077"><a style="background: #f2dcdb" href="javascript:;"></a>玫瑰金<i></i></li>
+                                        <li class="sub-sku on" marketable="1" sku-store="149790" sku-id="4079"><a style="background: #ddd9c3" href="javascript:;"></a>金色<i></i></li>
+                                    </ul>
+                                </dd>
+                                <input type="hidden" id="spuId" name="spuId" value="9927">
+                                <input type="hidden" id="cmdyCategoryId" name="cmdyCategoryId" value="124">
+                                <input type="hidden" id="queryFlag" name="queryFlag" value="1">
+                                <dt>版本：</dt>
+                                <dd>
+                                    <ul class="tags nettype-tags">
+                                        <input type="hidden" id="netType" name="netType" value="58">
+                                        <li name="netTypeLi" nettype="58" class="on">全网通<i></i></li>
+                                    </ul>
+                                </dd>
+                                <dt>容量：</dt>
+                                <dd>
+                                    <ul class="tags storage-tags">
+                                        <input type="hidden" id="storage" name="storage" value="3">
+                                        <li name="storageLi" storage="3" class="on">64G版本<i></i></li>
+                                    </ul>
+                                </dd>
+
+                                <dt>服务：</dt>
+                                <dd>
+                                    <ul class="tags service-tags">
+                                        <li name="broken-svc" sku-id="1633" svc-price="59" broken-svc-id="136" title="半年碎屏宝，服务类商品，此款碎屏宝不适配Xplay5机型，购买当天生效，不支持退款" class="broken">
+                                            <span class="icon"></span>【vivo服务】半年碎屏宝  <span class="item-price"><dfn>¥</dfn>59.00</span><i></i>
+                                        </li>
+                                        <li name="broken-svc" sku-id="1634" svc-price="99" broken-svc-id="137" title="一年碎屏宝，服务类商品，此款碎屏宝不适配Xplay5机型，购买当天生效，不支持退款" class="broken">
+                                            <span class="icon"></span>【vivo服务】一年碎屏宝  <span class="item-price"><dfn>¥</dfn>99.00</span><i></i>
+                                        </li>
+                                        <li class="detail"><a href="http://shop.vivo.com.cn/helpcenter/broken-screen">详情&gt;&gt;</a></li>
+                                    </ul>
+                                </dd>
+                                <dt>数量：</dt>
+                                <dd class="order-num">
+                                    <label id="dec">-</label>
+                                    <input id="add-num" type="text" maxlength="1" value="1">
+                                    <label id="inc">+</label>
+                                    <small id="order-num-msg">(仅限购3部)</small>
+                                </dd>
+                                <dt id="installment_dt">支持分期付款：</dt>
+                                <dd id="j_installment" class="installment">
+                                    <div class="installment-label">花呗分期最低价</div><div class="installment-price red" id="min-perpay"><dfn>¥</dfn>224.81*12期</div><label class="btn-show-more">更多</label>
+
+                                    <div class="installment-popup">
+                                        <div class="popup-container">
+                                            <table>
+
+                                                <tbody><tr>
+                                                        <th width="25%">每期金额</th>
+                                                        <th width="20%">期数</th>
+                                                        <th>手续费</th>
+                                                    </tr>
+                                                </tbody><tbody id="installment-tbd"><tr><td class="red"><dfn>¥</dfn>832.66</td> <td>3期</td> <td>共计约<dfn>¥</dfn>2498 含0%手续费</td></tr><tr><td class="red"><dfn>¥</dfn>416.33</td> <td>6期</td> <td>共计约<dfn>¥</dfn>2498 含0%手续费</td></tr><tr><td class="red"><dfn>¥</dfn>224.81</td> <td>12期</td> <td>共计约<dfn>¥</dfn>2697.84 含8%手续费</td></tr></tbody>
+                                            </table>
+                                            <div class="info-tip"><img src="./detail_files/icon-warning_f446f02.png">实际分期金额和手续费以收银台为准</div>
+                                        </div>
+                                        <i class="icon-close"></i>
+
+                                    </div>
+
+                                </dd>
+                            </dl>
+                        </form>
+
+                        <div class="btns">
+                            <button id="now-buy" class="btn-confirm" type="button" title="立即购买">立即购买</button>
+                        </div>
+                        <div id="error-msg" class="hidden" style="padding: 0 0 20px 50px; ">
+                            <span style="color: red;"></span>
+                        </div>
+
+                        <div class="activity-tags">
+                            <ul>
+                                <li class="post-free"></li>
+                                <li class="change-arbitrary"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="prod-main-info" style="padding-top: 0px;">
+            <div class="prod-main-tab">
+                <div class="prod-tab-box">
+                    <button id="now-buy-float" class="btn-confirm" type="button" title="立即购买" style="display: none;">立即购买</button>
+                    <div class="thumb-goods cl" style="display: none;">
+
+                        <div class="figure">
+                            <li> <img id="j_smallPic" src="./detail_files/4079_1469671328058_250x250.png" width="45" height="45"></li>
+                            <li> <img id="j_smallPic" src="./detail_files/4079_1467872157547_250x250.png" width="45" height="45"></li>
+                            <li> <img id="j_smallPic" src="./detail_files/4079_1467872158157_250x250.png" width="45" height="45"></li>
+                            <li> <img id="j_smallPic" src="./detail_files/4079_1467872158596_250x250.png" width="45" height="45"></li>
+                        </div>
+                        <h3 title="【热销新机】X7">【热销新机】X7</h3>
+                        <span>￥2498.00</span>
+                    </div>
+                    <ul>
+                        <li class="tab-information current" v="information"><a href="http://shop.vivo.com.cn/product/9927#">详情<b></b></a></li>
+                        <li class="tab-parameter" v="parameter"><a href="http://shop.vivo.com.cn/product/9927#">参数<b></b></a></li>
+                        <li class="tab-evaluate" v="evaluate"><a id="remarkHandler" href="http://shop.vivo.com.cn/product/9927#" prodid="9927">评价<span id="remarkCountSpan"> ( 12378 ) </span><b></b></a></li>
+                        <li class="tab-evaluation" v="evaluation" style="display: none"><a href="http://shop.vivo.com.cn/product/9927#">评测<b></b></a></li>
+                        <li class="tab-afterservice" v="afterservice"><a href="http://shop.vivo.com.cn/product/9927#">售后服务<b></b></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="prod-main-box">
+                <div class="prod-main-information" style="display: block;">
+                    <div class="section">
+                        <p><img data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160726/20160726161653299869_original.jpg" title="" alt="" src="./detail_files/20160726161653299869_original.jpg" style="display: inline;"><img data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160726/20160726090741562861_original.jpg" title="" alt="" src="./detail_files/20160726090741562861_original.jpg" style="display: inline;"><img data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160728/20160728165353842356_original.jpg" title="" alt="" src="./detail_files/20160728165353842356_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160709/201607091736085722_original.jpg" src="./detail_files/201607091736085722_original.jpg" style="display: inline;"><img data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160725/20160725164036404328_original.jpg" title="" alt="" src="./detail_files/20160725164036404328_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959279926_original.jpg" src="./detail_files/201606300959279926_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959306888_original.jpg" src="./detail_files/201606300959306888_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959327330_original.jpg" src="./detail_files/201606300959327330_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959361699_original.jpg" src="./detail_files/201606300959361699_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/20160630194458437_original.jpg" src="./detail_files/20160630194458437_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959408450_original.jpg" src="./detail_files/201606300959408450_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959449795_original.jpg" src="./detail_files/201606300959449795_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160701/201607010855061146_original.jpg" src="./detail_files/201607010855061146_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959498319_original.jpg" src="./detail_files/201606300959498319_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959541933_original.jpg" src="./detail_files/201606300959541933_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959569200_original.jpg" src="./detail_files/201606300959569200_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160630/201606300959592361_original.jpg" src="./detail_files/201606300959592361_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160705/20160705083422403_original.jpg" src="./detail_files/20160705083422403_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160705/201607050834339845_original.jpg" src="./detail_files/201607050834339845_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160705/201607050834403669_original.jpg" src="./detail_files/201607050834403669_original.jpg" style="display: inline;"><img title="" alt="" data-src="http://files.shop.vivo.com.cn/vivoshop/commodity/20160708/201607081758515348_original.jpg" src="./detail_files/201607081758515348_original.jpg" style="display: inline;"></p>
+                    </div>
+                </div>
+                <div class="prod-main-parameter" style="display: none;">
+                    <div class="prod-parameter-box">
+                        <ul>
+                            <li class="c"><h4>CPU</h4><p>1.8GHz  高通骁龙八核MSM8976</p></li>
+                            <li><h4>内存（运行内存）</h4><p>4GB RAM</p></li>
+                            <li class="c"><h4>ROM</h4><p>64GB ROM，（不支持T卡扩展）注：由于手机系统和预装的程序占据了部分存储空间，实际可用存储空间小于64G</p></li>
+                            <li><h4>系统</h4><p>Funtouch OS 2.5.1(基于Android 5.1)</p></li>
+                            <li class="c"><h4>屏幕尺寸</h4><p>5.2英寸</p></li>
+                            <li><h4>屏幕分辨率</h4><p>1920*1080</p></li>
+                            <li class="c"><h4>PPI</h4><p></p></li>
+                            <li><h4>机身厚度</h4><p>7.24mm</p></li>
+                            <li class="c"><h4>电池</h4><p>一体式内置电池</p></li>
+                            <li><h4>容量</h4><p>3000mAh</p></li>
+                            <li class="c"><h4>支持频段</h4><p>网络类型 双卡双待(双Nano SIM卡) 全网通* <br>2G   GSM ：GSM850/900/1800/1900MHz <br>2G CDMA： 800MHz <br>3G   WCDMA：850/900/1900/2100MHz；<br>3G  TD-SCDMA：1880/2010MHz；<br> 3G  CDMA2000：800MHz   <br>4G   TDD-LTE：B38/B39/B40/B41(100M)；<br> 4G  FDD-LTE：B1/3/4 <br>支持移动、联通、电信SIM卡，两张卡不能同时享受4G网络，如卡1使用4G卡，卡2就不能使用4G网络，如果卡2使用4G网络，卡1就不能使用4G网络，数据网络切换手动选择完成置换</p></li>
+                            <li><h4>连接支持</h4><p>wifi、蓝牙4.2、USB2.0、GPS定位、OTG,</p></li>
+                            <li class="c"><h4>功能特色</h4><p>Moonlight柔光灯|实时混响音效|4G大运存|双引擎闪充|前置指纹解锁|急速闪拍|HiFi音质</p></li>
+                            <li><h4>摄像头类型</h4><p>双摄像头</p></li>
+                            <li class="c"><h4>摄像头</h4><p>后置1300W PDAF+前置1600W FF</p></li>
+                            <li><h4>视频拍摄</h4><p>支持</p></li>
+                            <li class="c"><h4>标配</h4><p>主机、耳机  *1 <br>闪充充电头、数据线  *1  <br>取卡针、透明后盖保护壳  *1  <br>保修卡、快速入门指南  *1</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prod-main-evaluate" style="display: none;">
+                    <!-- 商品评价开始 -->
+                </div>
+                <div class="prod-main-evaluation" style="display: none;">
+                    <div class="section">
+                    </div>
+                </div>
+                <div class="prod-main-afterservice" style="display: none;">
+                    <div class="prod-afterservice-box wrapper">
+                        <ul class="cl">
+                            <li class="return">
+                                <b></b>
+                                <h3>30天无理由退换货</h3>
+                                <p>购机签收30天内，如产品出现质量问题，凭售后检测单包邮退换货；如果使用不满意，机器无人为损坏且赠品发票齐全，也可申请退换货处理，运费自付。<br>所有换货后的机器只享受行业标准签收7天内无理由退货、30天内出现质量问题包换的权益。
+                                </p>
+                            </li>
+
+                            <li class="b1">
+                                <b></b>
+                                <h3>退机服务</h3>
+                                <p>属于退机的机器直接退回原购买点，即vivo官方商城，商城售后收到机器后，确认符合退机条件，即安排财务将顾客购机款退回原付款账户。<br>
+                                    <span>退货地址：广东省东莞市长安镇沙头村东大路151号vivo电商仓库（邮编：523861）<br>收件人：vivo电商仓库<br>联系电话：4007161118 </span></p>
+                            </li>
+                            <li class="b3">
+                                <b></b>
+                                <h3>换机服务</h3>
+                                <p>为了给您提供更优质的服务，官方商城发售的手机自收货之日起30天内出现质量问题都可以联系在线客服，凭售后检测单申请退换货，运费由我们承担！ 或由您自付运费，寄回委托客服送修检测，确认后为您换机。</p>
+                            </li>
+                            <li class="b2">
+                                <b></b>
+                                <h3>全国联网三包服务</h3>
+                                <p>由于产品本身出现性能故障（见国家规定的《移动电话机商品性能故障表》）， 顾客凭有效发票和有效三包凭证按照三包规定享受三包服务：自售出之日起7日退换货，一个月内包换，一年内保修。三包细则查询：<a href="http://shop.vivo.com.cn/helpcenter/service-promise" target="_blank">http://shop.vivo.com.cn/helpcenter/service-promise</a></p>
+                            </li>
+                            <li class="b5">
+                                <b></b>
+                                <h3>vivo售后服务点查询</h3>
+                                <p>您可以直接进入手机设置—更多设置—售后服务，查询就近的售后服务点；手机无法开机的情况下，可以在下面页面，完成查询：<a href="http://www.vivo.com.cn/service/map.html" target="_blank">http://www.vivo.com.cn/service/map.html</a></p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>    </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="airbox" style="margin-left: 620px;">
+        <div id="j_GoTop" class="go-top" style="display: none;">
+            <a href="javascript:;" rel="nofollow" title="返回顶部"></a>
+        </div>
+    </div>
+    <div id="side-bar">
+        <a class="online-service" target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=4007161118&amp;aty=0&amp;a=0&amp;curl=&amp;ty=1">
+        </a>
+    </div>
+
+</block>

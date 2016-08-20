@@ -1,0 +1,97 @@
+/* ::::: http://img.t.sinajs.cn/t4/appstyle/widget/css/weiboShow/weiboShow.css?ver=8ec2d54138a5e122 ::::: */
+
+body, button, input, select, textarea { font: 12px/1.125 Arial,Helvetica,sans-serif; }
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0px; padding: 0px; }
+fieldset, img { border: 0px none; }
+address, caption, cite, code, dfn, em, i, th, var { font-style: normal; font-weight: 400; }
+a, u { text-decoration: none; }
+a:hover { text-decoration: underline; }
+.clearfix:after { display: table; clear: both; content: ""; }
+.clearfix {  }
+body { color: rgb(100, 100, 100); }
+.WB_linkA, .WB_linkA a, body a { color: rgb(21, 130, 189); }
+.WB_linkB, .WB_linkB a { color: rgb(122, 165, 185); }
+.WB_logo16a { display: inline-block; background: 65ef2e69gw1ew3fx8jyjyj20u0a5g1gl.jpg
+	('../../Home/Images/wb_logo16_a.png') no-repeat scroll 0% 0% transparent; width: 16px; height: 14px; font-size: 0px; line-height: 200px; overflow: hidden; }
+.WB_icon, .WB_icon_txt { display: inline-block; vertical-align: middle; }
+.WB_tipB_err, .WB_tipB_ok, .WB_tipB_ques, .WB_tipB_warn, .WB_tipB_warn_red, .WB_tipS_err, .WB_tipS_num, .WB_tipS_numWarn, .WB_tipS_ok, .WB_tipS_ques, .WB_tipS_warn { display: inline-block; vertical-align: middle; background: url('../../Home/Images/icon_tips.png') no-repeat scroll 0% 0% transparent; }
+.WB_tipS_err, .WB_tipS_ok, .WB_tipS_ques, .WB_tipS_warn { width: 16px; height: 16px; }
+.WB_tipS_warn { background-position: -124px -67px; }
+.WB_vline { margin: 0px 3px; color: rgb(204, 204, 204); }
+.WB_approve, .WB_approve_co, .WB_ico_club, .WB_ico_female, .WB_ico_male, .WB_ico_member { display: inline-block; background: url('../../Home/Images/icon_user.png') no-repeat scroll 0px center transparent; }
+.WB_approve { width: 16px; height: 15px; background-position: 0px -40px; vertical-align: middle; }
+.WB_approve_co { width: 16px; height: 15px; background-position: 0px -60px; vertical-align: middle; }
+.WB_btnA, .WB_btnB, .WB_btnC { font-size: 12px; }
+.WB_btnA em, .WB_btnB em, .WB_btnC em { font-style: normal; }
+.WB_btnA, .WB_btnA span, .WB_btnA_loading { display: inline-block; background: url('../../Home/Images/btns_bg.png') no-repeat scroll 0% 0% transparent; color: rgb(255, 255, 255); text-decoration: none; height: 29px; line-height: 28px; min-width: 35px; cursor: pointer; overflow: hidden; }
+.WB_btnA { text-align: center; padding-left: 4px; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2); }
+.WB_btnA span { background-position: 100% -28px; padding: 0px 10px 0px 6px; }
+.WB_btnA:hover, .WB_btnA_loading { background-position: 0px -56px; text-decoration: none ! important; }
+.WB_btnA:hover span, .WB_btnA_loading span { background-position: 100% -84px; }
+.WB_btnA:active { background-position: 0px -112px; }
+.WB_btnA:active span { background-position: 100% -141px; }
+.WB_btnA em { float: left; }
+.WB_btnA .WB_btnicn_add, .WB_btnC .WB_btnicn_each, .WB_btnC .WB_btnicn_ok { display: inline-block; width: 8px; height: 8px; overflow: hidden; background: url('../../Home/Images/icon_follow.png') no-repeat scroll 0% 0% transparent; margin: 10px 3px 0px 0px; }
+.WB_tips_top { font: 12px/1.125 Arial,Helvetica,sans-serif; position: absolute; border-radius: 2px; background: url('../../Home/Images/bg_trans.png') repeat scroll 0% 0% transparent; padding: 2px; }
+.WB_tips_top a { color: rgb(0, 120, 182); }
+.WB_tips_top .tips_inner { color: rgb(0, 0, 0) ! important; border: 1px solid rgb(204, 204, 204); background: none repeat scroll 0% 0% rgb(254, 255, 229); box-shadow: 0px 0px 0px 1px rgb(255, 255, 243) inset; }
+.WB_tips_top .WB_icon_txt { margin-left: 3px; }
+.WB_tips_top .tips_inner { padding: 6px 10px; }
+.weiboShow { overflow: hidden; }
+.weiboShow .weiboShow_wrap { border-right-style: solid; border-right-width: 1px; border-bottom-style: solid; border-bottom-width: 1px; border-left-style: solid; border-left-width: 1px; }
+.weiboShow .weiboShow_topborder { height: 2px; border-right-style: solid; border-right-width: 1px; border-left-style: solid; border-left-width: 1px; }
+.weiboShow .weiboShow_topborder p { border-top-style: solid; border-top-width: 1px; }
+.weiboShow .weiboShow_title { height: 28px; text-align: right; line-height: 30px; overflow: hidden; }
+.weiboShow .weiboShow_title_top { border-bottom-style: solid; border-bottom-width: 1px; }
+.weiboShow .weiboShow_title_logo { display: inline; float: left; margin-left: 10px; }
+.weiboShow .weiboShow_title_logo .WB_logo16a { margin-right: 5px; vertical-align: -1px; }
+.weiboShow .weiboShow_developer { padding: 13px 0px 15px; }
+.weiboShow .weiboShow_developer_pic { float: left; margin: 2px 0px 0px 15px; display: inline; }
+.weiboShow .weiboShow_developer_detail { margin-left: 73px; }
+.weiboShow .weiboShow_developer_pic a { display: block; width: 50px; height: 50px; }
+.weiboShow .weiboShow_developerDetail_name { height: 17px; overflow: hidden; margin-left: 2px; }
+.weiboShow .weiboShow_developerDetail_name dd, .weiboShow .weiboShow_developerDetail_name dt { display: inline-block; }
+.weiboShow .weiboShow_developerDetail_name dd {  }
+.weiboShow .weiboShow_developerDetail_name a { font-size: 14px; line-height: 16px; }
+.weiboShow .weiboShow_developerDetail_namedir { margin-left: 5px; }
+.weiboShow .weiboShow_developerDetail_btn { margin-top: 10px; }
+.weiboShow .weiboShow_main_height { margin-bottom: 11px; }
+.weiboShow .weiboShow_main_feed { position: relative; overflow: hidden; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_list { margin: 0px 10px; padding: 12px 0px 10px; border-bottom-style: dotted; border-bottom-width: 1px; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_listContent { margin: 0px 5px; line-height: 20px; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_listContent .weiboShow_mainFeed_listContent_txt { word-break: break-all; word-wrap: break-word; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_listContent_action { padding-top: 5px; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_listContent_actionTime { float: left; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_listContent_actionMore { float: right; }
+.weiboShow .weiboShow_main_feed .weiboShow_mainFeed_listContent_actionMore .weiboShow_vline { margin: 0px 7px 0px 8px; }
+.weiboShow .weiboShow_mainFeed_listContent_picshow { padding-top: 5px; }
+.weiboShow .weiboShow_mainFeed_listContent_picshow img { display: inline-block; border-width: 1px; border-style: solid; padding: 5px; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.weiboShow .WB_approve, .weiboShow .WB_approve_co, .weiboShow .WB_ico_club { margin: 0px 2px; vertical-align: middle; }
+.weiboShow .feed_scroll_solo { border-top-width: 1px; border-top-style: solid; }
+.weiboShow .scroll_container { position: absolute; width: 7px; height: 98%; border-radius: 5px; right: 2px; top: 1%; z-index: 98; }
+.weiboShow .scroll_bar { position: absolute; width: 5px; border-radius: 5px; left: 1px; top: 1px; }
+.weiboShow .relay_box { position: relative; margin: 10px 0px 5px; padding: 15px 10px 10px; border-width: 1px; border-style: solid; border-radius: 3px; }
+.weiboShow .expand_arrow { position: absolute; width: 22px; }
+.weiboShow .expand_arrow .expand_arrow_border, .weiboShow .expand_arrow .expand_arrow_content { display: block ! important; height: 15px; overflow: hidden; font-family: SimSun ! important; font-size: 26px ! important; line-height: 1.231; }
+.weiboShow .expand_arrow .expand_arrow_content { margin-top: -14px; }
+.weiboShow .relay_box .expand_arrow { top: -15px; left: 5px; }
+.weiboShow .relay_container { overflow: hidden; }
+.weiboShow .relay_text { line-height: 20px; }
+.weiboShow .relay_bottom { height: 20px; padding-top: 8px; }
+.weiboShow .relay_info { float: left; }
+.weiboShow .relay_handle { float: right; }
+/* ::::: http://img.t.sinajs.cn/t4/appstyle/widget/css/weiboShow/skin/skin_default.css?ver=8ec2d54138a5e122 ::::: */
+
+.weiboShow .S_title_bg, .weiboShow .weiboShow_title, .weiboShow .weiboShow_topborder { background-color: rgb(255, 255, 255); }
+.weiboShow .S_title_c { color: rgb(255, 255, 255); }
+.weiboShow * { border-color: rgb(210, 210, 210); }
+.weiboShow .S_border_c, .weiboShow .weiboShow_vline { color: rgb(210, 210, 210); }
+.weiboShow .S_border_bg { background: none repeat scroll 0% 0% rgb(210, 210, 210); }
+.weiboShow .weiboShow_topborder { border-radius: 1px 1px 0px 0px; border: medium none; background: -moz-linear-gradient(left center , rgb(235, 25, 45) 0px, rgb(253, 185, 64) 100%) repeat scroll 0% 0% transparent; }
+.weiboShow .weiboShow_topborder p { border-color: transparent; }
+.weiboShow { color: rgb(89, 89, 89); }
+.weiboShow .weiboShow_developerDetail_namedir { color: rgb(153, 153, 153); }
+.weiboShow .WB_linkA, .weiboShow .WB_linkA a, .weiboShow a { color: rgb(0, 120, 182); }
+.weiboShow .WB_linkB, .weiboShow .WB_linkB a { color: rgb(154, 187, 200); }
+.weiboShow .weiboShow_follow, .weiboShow .weiboShow_main_allList_focus, .weiboShow .weiboShow_main_height { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.weiboShow .S_focus_bg, .weiboShow .weiboShow_mainFeed_list:hover, .weiboShow .weiboShow_mainFeed_list_focus { background-color: rgb(249, 249, 249); }

@@ -1,0 +1,9 @@
+body { background: rgb(230, 230, 230) none repeat scroll 0% 0%; font-size: 12px ! important; color: rgb(87, 98, 103); font-family: "Microsoft YaHei"; line-height: 1.5em; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin: 0px; padding: 0px; border: 0px none; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; }
+#reg_agreement { margin: 0px auto; }
+#reg_agreement_title { font-size: 20px; color: black; max-width: 300px; margin: 0px auto; text-align: center; }
+#reg_agreement_body { border: 1px solid rgb(102, 102, 102); padding: 3px; margin: 10px auto; max-width: 990px; }
+ul { list-style-type: none; }
+.li_title { font-weight: bold; margin: 10px 0px; line-height: 1.5em; }
+li { display: list-item; }
+a#close_window:link, a#close_window:hover, a#close_window:active, a#close_window:visited, a#close_window:focus { color: green; display: block; max-width: 60px; text-align: center; margin: 0px auto; outline: 0px none; }

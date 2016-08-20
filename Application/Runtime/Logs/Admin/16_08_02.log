@@ -1,0 +1,81 @@
+[ 2016-08-02T16:17:02+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:19:35+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:20:00+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:20:08+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:20:22+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:22:55+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:23:32+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:25:09+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:25:26+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:26:02+08:00 ] 127.0.0.1 /index.php/Admin/Pic/edit/id/262.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-02T16:56:07+08:00 ] 127.0.0.1 /index.php/Admin/User/add.html
+ERR: 无法加载控制器:User
+
+[ 2016-08-02T17:09:33+08:00 ] 127.0.0.1 /index.php/Admin/Replay/index/fenlei/0.html
+ERR: 无法加载控制器:Replay
+
+[ 2016-08-02T17:09:38+08:00 ] 127.0.0.1 /index.php/Admin/Style/index.html
+ERR: 无法加载控制器:Style
+
+[ 2016-08-02T17:37:22+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'num' doesn't have a default value
+
+[ 2016-08-02T17:37:54+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'num' doesn't have a default value
+
+[ 2016-08-02T17:38:59+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:39:32+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:42:05+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:42:29+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:43:39+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:43:45+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:44:12+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T17:44:30+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pic' cannot be null
+
+[ 2016-08-02T17:46:02+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pic' cannot be null
+
+[ 2016-08-02T17:46:18+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'pic' cannot be null
+
+[ 2016-08-02T17:47:02+08:00 ] 127.0.0.1 /index.php/Admin/Part/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'sx' doesn't have a default value
+
+[ 2016-08-02T20:52:57+08:00 ] 127.0.0.1 /index.php/Admin/Rule/add.html
+ERR: 无法加载控制器:Rule
+

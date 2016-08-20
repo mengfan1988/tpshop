@@ -1,0 +1,7 @@
+[Template]
+Template Name=Save Site -> Complete Web Pages
+Description=Download and save all pages within the current site. Save complete Web pages including html, images, flash, css, javascript etc...
+File Types=.htm,.html,.shtm,.shtml,.asp,.aspx,.css,.xml,.xsl,.cfm,.htx,.js,.nsf,.phtml,.frm,.nsf,.jsp,.php,.php3,.wml,.gif,.jpg,.jpeg,.jpe,.png,.bmp,.wav,.au,.snd,.mid,.midi,.mp3,.ram,.aiff,.mov,.avi,.mpeg,.mpe,.mpg,.spl,.dpr,.swf
+Page Location=1
+Resource Location=2
+Depth=-1

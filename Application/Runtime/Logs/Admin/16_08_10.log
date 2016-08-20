@@ -1,0 +1,24 @@
+[ 2016-08-10T13:10:03+08:00 ] 127.0.0.1 /index.php/Admin/Style/%7B:U('Admin/Style/insert')%7D
+ERR: 非法操作:{:U('Admin
+
+[ 2016-08-10T13:12:31+08:00 ] 127.0.0.1 /index.php/Admin/Style/%7B:U('Admin/Style/insert')%7D
+ERR: 非法操作:{:U('Admin
+
+[ 2016-08-10T13:20:14+08:00 ] 127.0.0.1 /index.php/Admin/User/add.html
+ERR: 无法加载控制器:User
+
+[ 2016-08-10T21:39:26+08:00 ] 127.0.0.1 /index.php/Admin/Order/detail/id/56.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vivo.vivo_phone' doesn't exist
+
+[ 2016-08-10T21:39:49+08:00 ] 127.0.0.1 /index.php/Admin/Order/detail/id/56.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-10T21:40:14+08:00 ] 127.0.0.1 /index.php/Admin/Order/detail/id/56.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-10T21:40:18+08:00 ] 127.0.0.1 /index.php/Admin/Order/detail/id/56.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+
+[ 2016-08-10T22:01:09+08:00 ] 127.0.0.1 /index.php/Admin/Order/del/id/56/huishou/1/orderNum/5629d4093d090.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'vivo.oppo_order' doesn't exist
+

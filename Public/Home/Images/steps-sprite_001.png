@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>『OPPO手机官网』OPPO智能手机_OPPO最新款手机-OPPO智能手机官方网站 </title>
+	<style>
+	.box {
+		width: 80%;
+		max-width: 500px;
+		min-width: 200px;
+		border: 2px solid #00925f;
+		padding: 20px;
+		margin: 0 auto;
+	}
+	.message {
+		font-size: 30px;
+		color: #000;
+		font-weight: 700;
+	}
+	.title {
+		font-size: 16px;
+		color: #1e1e1e;
+		margin-top: 5px;
+	}
+	.sub-title {
+		font-size: 16px;
+		color: #7b7b7b;
+		margin-top: 5px;
+	}
+	.back {
+		display: inline-block;
+		font-size: 16px;
+		color: #00925f;
+		margin-top: 10px;
+	}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box" id="box">
+			<div class="message">404</div>
+			<div class="title">很抱歉，没有找到你想要的页面。</div>
+			<div class="sub-title">您要查看的页面可能已经被删除、更名或者暂时不可用。</div>
+			<a href="http://www.oppo.com/" class="back">回到官网首页&gt;&gt;</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var box = document.getElementById('box');
+	var windowHeight = document.documentElement.clientHeight;
+	var boxHeight = box.clientHeight;
+	var marginTop = (windowHeight - boxHeight) * 0.45;
+	box.style.marginTop = marginTop + 'px';
+	</script>
+	<!-- 百度统计代码  -->
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "//hm.baidu.com/hm.js?9cb8846b548404438c81aaa02eda4f0f";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+	<!--oppo统计-->
+	<script>
+	var _optj = _optj || [];
+	(function() {
+	  var op = document.createElement("script");
+	  op.src = "http://static.oppo.com/tj/optj-1.0.4.min.js";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(op, s);
+	})();
+	</script>
+</body>
+</html>

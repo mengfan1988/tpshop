@@ -1,0 +1,491 @@
+<?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    *<{ font-family:微软雅黑;
+      font-size:14px;}>
+    .img<{height:30px;padding-top:5px;}>
+</style>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	
+    <meta name="author" content="">
+
+    <title>『VIVO 后台管理系统』</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/Public/Admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/Public/Admin/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="/Public/Admin/dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/Public/Admin/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="/Public/Admin/bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/Public/Admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+     <link rel="stylesheet" href="/Public/Admin/bower_components/morrisjs/style.css">
+     <link rel="stylesheet" href="/Public/Admin/bower_components/morrisjs/ie.css">
+     <link rel="stylesheet" href="/Public/Admin/bower_components/morrisjs/ie.js">
+    
+    
+    <script src="/Public/Admin/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+       
+                
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+                <img src="/Public/Home/Images/vivo_logo.png" alt="" class="dropdown-toggle">
+
+                <!-- <a class="navbar-brand" href="index.html">Oppo商城后台管理</a> -->
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="<?php echo U('Admin/Login/logout');?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                         <li>
+                            <a href="<?php echo U('Admin/Index/index');?>"><i class="fa fa-home fa-2x">&nbsp;</i>首页<span class="fa arrow"></span></a>
+                            
+                            <!-- /.nav-second-level -->
+                        </li>
+                    <!-- 用户管理 -->
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-1x">&nbsp;&nbsp;</i>用户管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/User/add');?>">用户添加</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/User/index');?>">用户列表</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                  
+                    <!-- 友情链接管理 -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw">&nbsp;</i>友情管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Link/add');?>">添加友情链接</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Link/index');?>">友情链接列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                  
+                    <!-- 积分商城管理 -->
+                        
+                    <!-- 手机管理 -->
+                         <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 手机管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Phone/add');?>">手机添加</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Phone/index');?>">手机列表</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Phone/xjIndex');?>">下架手机</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    <!-- 配件管理 -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 配件管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Part/add');?>">配件添加</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Part/index');?>">配件列表</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Part/xjIndex');?>">下架配件</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 订单管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Order/index',array('huishou'=>0));?>">订单列表</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Order/index',array('huishou'=>1));?>">订单回收站</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    <!-- 赠品套餐管理 -->
+                    <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 评价管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Assess/index',array('fenlei'=>0,'status'=>0));?>">手机评价列表</a>
+                                    <a href="<?php echo U('Admin/Assess/index',array('fenlei'=>0,'status'=>1));?>">手机评价(屏蔽)列表</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Assess/index',array('fenlei'=>1,'status'=>0));?>">配机评价列表</a>
+                                    <a href="<?php echo U('Admin/Assess/index',array('fenlei'=>1,'status'=>1));?>">配机评价(屏蔽)列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 回复管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Replay/index',array('fenlei'=>0));?>">手机回复列表</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Replay/index',array('fenlei'=>1));?>">配机回复列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 赠品和套餐管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Gift/add');?>">赠品/套餐添加</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Gift/index');?>">赠品和套餐列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    <!-- 图片管理 -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 图片管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Pic/index',array('fenlei'=>0));?>">手机图片列表</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="<?php echo U('Admin/Pic/index',array('fenlei'=>1));?>">配机图片列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    <!-- 属性管理 -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 属性管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Style/index');?>">属性列表</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Style/add');?>">属性添加</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                    <!-- 规则管理 -->
+                      <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>权限规则管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Rule/add');?>">添加规则</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Rule/index');?>">规则列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    <!-- 用户组管理 -->
+                        <li>
+                          <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>权限用户组管理<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Group/add');?>">添加权限组</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Group/index');?>">权限组列表</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                         <li>
+                          <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>用户投诉<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/Complain/index');?>">待处理</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo U('Admin/Complain/add');?>">以处理</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                          <li>
+                          <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>网站配置<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo U('Admin/WZPZ/index');?>">网站信息</a>
+                                </li> 
+                                <li>
+                                    <a href="<?php echo U('Admin/WZPZ/add');?>">添加配置</a>
+                                </li>
+                                
+                            </ul>
+                       
+                        </li>
+                             
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <!-- 内容区 -->
+            
+                
+                <br>    <br>    <br>    <br>    <br>    <br>    <br>
+                             
+ <center>
+<section id="rt-showcase-surround">
+    <div id="rt-showcase" class="slider-container rt-overlay-dark">
+        <div class="rt-container slider-container">
+            <div class="rt-grid-12 rt-alpha rt-omega">
+                
+               
+             
+                <div class="csslider1 autoplay">
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_0" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_1" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_2" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_play1" type="radio" class="cs_anchor" checked>
+                    <input name="cs_anchor1" autocomplete="off" id="cs_pause1" type="radio" class="cs_anchor" >
+                    <ul>
+                        <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+                            <img src="/Public/Admin/Images/1.jpg" style="width: 100%;">
+                        </div>
+                        <li class="num0 img">
+                            <img src="/Public/Admin/images/1.jpg" alt="Clouds" title="Clouds" />
+                        </li>
+                        <li class="num1 img">
+                            <img src="/Public/Admin/images/2.jpg" alt="Typewriter" title="Typewriter" />
+                        </li>
+                        <li class="num2 img">
+                            <img src="/Public/Admin/images/3.jpg" alt="Bicycle" title="Bicycle" />
+                        </li>
+                    
+                    </ul>
+                    <div class="cs_description">
+                        <label class="num0">
+                            <span class="cs_title"><span class="cs_wrapper">Clouds</span></span>
+                            
+                        </label>
+                        <label class="num1">
+                            <span class="cs_title"><span class="cs_wrapper">Typewriter</span></span>
+                            
+                        </label>
+                        <label class="num2">
+                            <span class="cs_title"><span class="cs_wrapper">Bicycle</span></span>
+                            
+                        </label>
+                    </div>
+                    
+                    <div class="cs_arrowprev">
+                        <label class="num0" for="cs_slide1_0"></label>
+                        <label class="num1" for="cs_slide1_1"></label>
+                        <label class="num2" for="cs_slide1_2"></label>
+                    </div>
+                    <div class="cs_arrownext">
+                        <label class="num0" for="cs_slide1_0"></label>
+                        <label class="num1" for="cs_slide1_1"></label>
+                        <label class="num2" for="cs_slide1_2"></label>
+                    </div>
+                    
+                    <div class="cs_bullets">
+                        <label class="num0" for="cs_slide1_0">
+                            <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="/Public/Admin/images/small/1.jpg" alt="Clouds" title="Clouds" /></span>
+                        </label>
+                        <label class="num1" for="cs_slide1_1">
+                            <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="/Public/Admin/images/small/2.jpg" alt="Typewriter" title="Typewriter" /></span>
+                        </label>
+                        <label class="num2" for="cs_slide1_2">
+                            <span class="cs_point"></span>
+                            <span class="cs_thumb"><img src="/Public/Admin/images/small/3.jpg" alt="Bicycle" title="Bicycle" /></span>
+                        </label>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</section>       
+                
+                
+                
+                
+                
+                
+                
+                  
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/Public/Admin/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/Public/Admin/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="/Public/Admin/bower_components/raphael/raphael-min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/Public/Admin/dist/js/sb-admin-2.js"></script>
+      
+      
+</body>
+
+</html>

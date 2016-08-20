@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.0.0.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div width="200px" height="400px">
+         <img src="1.jpg" width="200px" id="a" />
+        <img src="3.jpg" id="b" width="50px" />
+        <img src="4.jpg" id="b" width="50px" /></div>
+        <script>
+           
+                $('#b').on('mouseover',function(){
+            var b=$(this).attr('src');
+           
+            $('#a').attr('src',b);
+      
+        });
+      
+        </script>  
+        
+    </body>
+</html>

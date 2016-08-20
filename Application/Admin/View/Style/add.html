@@ -1,0 +1,54 @@
+<extend name="Index/index" />
+
+<block name="con">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">属性添加</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>  
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form role="form" action="<{:U('Admin/Style/insert')}>" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>属性名</label>
+                                    <input name="name" type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label>属性值</label>
+                                    <input name='zhi' type="text" class="form-control" placeholder="请填写一个属性值">
+                                </div>
+                             
+                                <div class="form-group">
+                                    <label>是否支持多选</label><br>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="geshi" id="optionsRadiosInline1" value="0" >不支持
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="geshi" id="optionsRadiosInline2" value="1">支持
+                                    </label>
+                                </div>
+                                
+                                
+                                <button  class="btn btn-primary">添加</button>
+                                <button type="reset" class="btn btn-default">重置</button>
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 (nested) -->
+                       
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>	  
+</block>

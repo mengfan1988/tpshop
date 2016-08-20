@@ -1,0 +1,170 @@
+/* ::::: http://points.oppo.com/static/css/deepblue/home.css?1 ::::: */
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0px; padding: 0px; }
+body, button, input, select, textarea { font: 12px/1.5 tahoma,arial,宋体,sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+ul, ol { list-style: outside none none; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+fieldset, img { border: 0px none; }
+button, input, select, textarea { font-size: 100%; }
+#header, #content, #footer { margin-left: auto; margin-right: auto; }
+.left { float: left; }
+.clearfix::after { content: " "; display: block; height: 0px; clear: both; }
+.clearfix {  }
+a:hover { color: rgb(64, 159, 115); text-decoration: none; }
+body { font: 12px/1.5 microsoft yahei; color: rgb(43, 43, 43); min-width: 1180px; }
+a:hover { color: rgb(0, 146, 95); text-decoration: none; }
+.site-nav-left a, .logo, .site-nav-right .cart, .mall-search, .floor-content3 li .arrow, .box-ft .arrow, .box-c .box-bd a, .box-c .box-bd span, .foot-tags div, .foot-links-content a, .foot-bt-links .lang-tip, .foot-bt-links .lang, .floor1-nav-content a div, .banner-nav li, .ft-logo, .floor1-title { background: transparent url('../../Home/Jifen/Images/icons.png') no-repeat scroll 0% 0%; }
+#site-nav { height: 37px; background: rgb(43, 43, 43) none repeat scroll 0% 0%; border-top: 3px solid rgb(0, 146, 95); }
+.site-nav-content, .mall-nav-content { width: 1180px; margin: 0px auto; }
+.site-nav-left-png { margin-top: 10px; float: left; }
+.site-nav-left-png a { display: block; float: left; width: 35px; }
+.site-nav-left-text { font-weight: bold; color: rgb(0, 146, 95); font-size: 14px; vertical-align: middle; height: 37px; line-height: 37px; }
+.cart-png { vertical-align: middle; display: block ! important; height: 24px ! important; width: 90px; line-height: 16px ! important; margin-top: -2px; }
+.cart-png img { vertical-align: middle; }
+.mall-nav-content .logo { float: left; width: 170px; height: 65px; background-position: 0px 32px; text-indent: -999em; }
+.site-nav-right { float: right; margin-top: 10px; }
+.site-nav-right a { height: 12px; line-height: 12px; display: block; float: left; padding: 3px 15px 0px; color: rgb(178, 178, 178); }
+.site-nav-right a:hover { color: rgb(0, 146, 95); }
+.mall-nav-content { height: 85px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.mall-nav-right { float: right; }
+.mall-nav-links { float: left; }
+#newnav a { color: rgb(43, 43, 43); }
+.mall-nav-links a { float: left; color: rgb(43, 43, 43); font-size: 14px; padding-right: 40px; font-weight: bold; margin-top: 34px; }
+.mall-nav-links a:hover, .mall-nav-links a.active { color: rgb(0, 146, 95); }
+.search-form { float: left; position: relative; }
+.submit-search { width: 25px; height: 24px; position: absolute; top: 34px; left: 0px; z-index: 2; border: medium none; background: transparent none repeat scroll 0% 0%; font-size: 0px; text-indent: -99999px; cursor: pointer; }
+.mall-search { float: left; margin-top: 34px; width: 133px; height: 24px; border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(195, 195, 195) rgb(195, 195, 195) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 13px; box-shadow: 0px 0px 3px rgb(229, 229, 229) inset; transition: width 0.4s ease 0s, background-color 0.4s ease 0s; background-position: 7px -1044px; background-color: rgb(240, 240, 240); padding-left: 25px; outline: medium none; color: rgb(43, 43, 43); line-height: 24px; }
+.mall-search:focus { width: 200px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 146, 95); }
+#mall-nav { position: relative; background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+#header { position: relative; z-index: 999; height: 120px; }
+#content { overflow: hidden; position: relative; margin-top: -5px; z-index: 200; }
+.head-shadow, .head-shadow2 { position: relative; width: 100%; height: 3px; background: rgb(178, 178, 178) none repeat scroll 0% 0%; opacity: 0.35; bottom: 0px; left: 0px; z-index: 999999; }
+#footer { background: rgb(255, 255, 255) none repeat scroll 0% 0%; clear: both; }
+.foot-links { border-top: 1px solid rgb(234, 234, 234); }
+.foot-links-content { width: 1180px; margin: 0px auto; overflow: hidden; padding-top: 25px; height: 215px; }
+.foot-links-content li { width: 188px; float: left; }
+.foot-links-content .title { color: rgb(55, 55, 55); font-size: 14px; padding-bottom: 10px; padding-left: 2px; font-weight: bold; background-color: rgb(255, 255, 255); height: 20px; }
+.foot-links-content a { display: block; color: rgb(131, 131, 131); padding: 5px 10px; background-position: -330px -1007px; }
+.foot-links-content a.sina { background-position: 0px -878px; padding-left: 25px; width: 80px; }
+.foot-links-content a.sina:hover { background-position: -144px -878px; }
+.foot-links-content a.qq { background-position: 0px -906px; padding-left: 25px; width: 80px; }
+.foot-links-content a.qq:hover { background-position: -144px -906px; }
+.foot-links-content a.renren { background-position: 0px -935px; padding-left: 25px; width: 80px; }
+.foot-links-content a.renren:hover { background-position: -144px -935px; }
+.foot-links-content a.qzone { background-position: 0px -850px; padding-left: 25px; width: 80px; }
+.foot-links-content a.qzone:hover { background-position: -144px -850px; }
+.foot-links-content a:hover, .foot-bt-links a:hover { color: rgb(0, 146, 95); }
+.foot-bt { height: 70px; background: rgb(43, 43, 43) none repeat scroll 0% 0%; border-top: 5px solid rgb(0, 0, 0); margin-top: 0px; }
+.foot-bt-content { width: 1180px; margin: 0px auto; }
+.foot-tel, .foot-zxkf { margin: 10px 0px; }
+.foot-zxkf { cursor: pointer; }
+.foot-tel { background: transparent url('../../Home/Jifen/Images/tel_s.png') no-repeat scroll 0px 10px; }
+.foot-wz-01, .foot-wz-02 { margin-left: 57px; width: 175px; }
+.foot-wz-01 { font-size: 22px; color: rgb(64, 159, 115); }
+.foot-tel-01 { font-size: 26px; }
+.foot-zxkf { background: transparent url('../../Home/Jifen/Images/zxkf.png') no-repeat scroll 0px 10px; }
+.foot-kf-01 { background: transparent url('../../Home/Jifen/Images/zx.png') no-repeat scroll 100px 13px; }
+.ft-logo-png { width: 100px; height: 20px; float: left; margin-top: 28px; }
+.ft-info { color: rgb(130, 130, 130); float: left; margin-left: 20px; margin-top: 25px; }
+.ft-info a { color: rgb(130, 130, 130); }
+.ft-info a:hover { color: rgb(0, 146, 95); }
+.foot-bt-links { float: right; padding-top: 25px; }
+.foot-bt-links a { padding-left: 40px; color: rgb(226, 226, 226); float: left; }
+.fitting .list ul::after { clear: both; display: table; content: ""; }
+#detail { background: rgb(246, 246, 246) none repeat scroll 0% 0%; padding-top: 46px; }
+#detail .product-intro { width: 1180px; padding-top: 5px; margin: 0px auto; overflow: auto; padding-bottom: 30px; }
+.product-intro .name { padding-top: 70px; color: rgb(43, 43, 43); font-size: 36px; font-weight: bold; line-height: 50px; }
+.property { float: right; width: 590px; }
+.property .tip { margin-bottom: 30px; }
+.property .tip p { color: rgb(135, 135, 135); font-size: 12px; line-height: 20px; }
+.property { color: rgb(135, 135, 135); }
+.property .points { padding-bottom: 5px; line-height: 40px; }
+.property .points span { color: rgb(219, 68, 55); font-size: 30px; font-weight: bold; }
+.property .pointsunit { font-size: 16px ! important; margin-left: 5px; }
+.property .btns { margin-top: 20px; }
+.btns .btn-append { width: 150px; height: 40px; text-align: center; background: rgb(3, 183, 136) none repeat scroll 0% 0%; float: left; margin-right: 10px; border-radius: 20px; cursor: pointer; }
+.btns .btn-append:hover { background: rgb(0, 146, 95) none repeat scroll 0% 0%; }
+.btns .btn-append a { display: block; line-height: 40px; color: rgb(255, 255, 255); font-size: 16px; }
+.property .result2 { font-size: 12px; line-height: 32px; }
+.property .result2 span { color: rgb(255, 0, 0); }
+.property .sku { width: 590px; padding: 10px 0px; overflow: auto; }
+.sku dl {  }
+.sku dt { color: rgb(135, 135, 135); width: 50px; text-align: left; line-height: 33px; }
+.sku dd {  }
+.sku dt, .sku dd { display: inline; float: left; }
+.stock a.disable { background-color: rgb(226, 226, 226); cursor: default; color: rgb(255, 255, 255); }
+.stock a { border: 1px solid rgb(226, 226, 226); height: 30px; line-height: 30px; vertical-align: top; display: inline-block; font-size: 0px; width: 25px; text-align: center; background-color: rgb(255, 255, 255); background-position: 3px -183px; overflow: hidden; color: rgb(255, 255, 255); }
+.stock .reduce { border-top-left-radius: 15px; border-bottom-left-radius: 15px; }
+.stock .increase { border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
+.stock input { margin-left: -4px; width: 40px; height: 30px; line-height: 28px; font-size: 12px; color: rgb(135, 135, 135); background-color: rgb(255, 255, 255); border-width: 1px 0px; border-style: solid none; border-color: rgb(226, 226, 226) -moz-use-text-color; -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; outline: 0px none; ime-mode: disabled; text-align: center; }
+.stock a.reduce { background-image: url('../../Home/Jifen/Images/undefined'); background-repeat: no-repeat; background-position: center center; }
+.stock a.increase { background-image: url('../../Home/Jifen/Images/undefined'); margin-left: -4px; background-repeat: no-repeat; background-position: center center; }
+.gallery .booth { width: 460px; text-align: center; }
+.gallery .booth img { width: 100%; }
+.gallery { width: 460px; float: left; padding-left: 70px; }
+.detail-content { text-align: center; }
+.bg { position: absolute; height: 100%; width: 100%; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.3; z-index: 1000; display: none; }
+.pendant, .kf { z-index: 99999; position: fixed; width: 57px; bottom: 50%; right: 3%; display: none; }
+.pendant_k, .pendant_w { display: block; height: 225px; color: rgb(135, 135, 135); font-size: 12px; font-family: 宋体; width: 191px; position: absolute; right: 56px; border: 1px solid rgb(218, 218, 218); background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.pendant_w { background: rgb(255, 255, 255) url('../../Home/Jifen/Images/wx_d.png') no-repeat scroll center 20px; height: 35px; padding-top: 150px; position: absolute; text-align: center; top: 70px; width: 160px; }
+.pendant_kf, .pendant_wx, .pendant_top { display: block; height: 60px; background: transparent url('../../Home/Jifen/Images/kf.png') no-repeat scroll center top; color: rgb(135, 135, 135); font-size: 11px; font-family: 宋体; text-align: center; width: 50px; line-height: 96px; }
+.pendant_wx { background: transparent url('../../Home/Jifen/Images/wx.png') no-repeat scroll center top; }
+.pendant_top { background: transparent url('../../Home/Jifen/Images/totop.png') no-repeat scroll center top; }
+.pendant_top:hover { background: transparent url('../../Home/Jifen/Images/totop2.png') no-repeat scroll center top; }
+.pendant_wx:hover { background: transparent url('../../Home/Jifen/Images/wx_h.png') no-repeat scroll center top; }
+.kefu, .weixin, .totop { border: 1px solid rgb(218, 218, 218); width: 50px; height: 49px; padding: 13px 5px; position: absolute; top: 49px; background-color: rgb(255, 255, 255); overflow: hidden; }
+.weixin { line-height: 100px; top: 125px; }
+.totop { line-height: 100px; top: 201px; }
+/* ::::: http://points.oppo.com/static/points/points.css?1 ::::: */
+
+.points-unit { width: 100%; }
+.points-wrapper { width: 1180px; margin: 0px auto; position: relative; background-color: rgb(255, 255, 255); }
+.points-rows { height: 1%; overflow: auto; display: block; }
+.points-mask { background-color: rgb(0, 0, 0); position: absolute; top: 0px; left: 0px; opacity: 0.8; width: 100%; z-index: 999; display: none; }
+.points-dialog { z-index: 1000; background-color: rgb(255, 255, 255); border: 5px solid rgb(133, 133, 133); color: rgb(87, 87, 87); width: 510px; display: none; }
+.points-dialog-bar { height: 40px; line-height: 40px; font-size: 14px; font-weight: bold; padding: 0px 30px; position: relative; background-color: rgb(246, 246, 246); }
+.points-dialog-bar a { position: absolute; right: 20px; top: 14px; }
+.points-dialog-content { padding: 25px 0px 50px; }
+.points-dialog-unit { width: 100%; text-align: center; }
+.points-dialog-green { color: rgb(3, 183, 136); font-size: 20px; line-height: 26px; margin-top: 20px; }
+.points-dialog-getpoints { margin-top: 15px; }
+.points-dialog-getpoints a { color: rgb(0, 136, 204) ! important; font-size: 12px; line-height: 20px; }
+.points-dialog-getpoints a:hover { text-decoration: underline; }
+.points-dialog-text { color: rgb(152, 152, 152); font-size: 12px; line-height: 26px; }
+.points-dialog-text a { color: rgb(3, 183, 136) ! important; }
+.points-dialog-text a:hover { text-decoration: underline; }
+#jfcg .points-dialog-content { padding: 40px 0px 60px; }
+#jfcg .points-dialog-green { margin-top: 25px; margin-bottom: 10px; }
+.points-dialog-btn { padding: 0px 30px; height: 33px; line-height: 33px; color: rgb(255, 255, 255) ! important; background-color: rgb(3, 183, 136); border-radius: 4px; display: inline-block; text-align: center; margin-top: 20px; }
+.points-dialog-unit a.disabled { cursor: default; border: 1px solid rgb(204, 204, 204); background-color: rgb(246, 246, 246); color: rgb(102, 102, 102) ! important; }
+#shdz { width: 640px; }
+#shdz .points-dialog-content { padding: 20px 30px 50px; position: relative; }
+#shdz .points-dialog-unit { text-align: left; line-height: 30px; padding: 10px 0px; }
+#shdz .points-dialog-unit span { color: rgb(51, 51, 51); font-size: 14px; }
+#shdz .points-dialog-unit input { width: 150px; height: 28px; line-height: 26px; border: 1px solid rgb(204, 204, 204); }
+#shdz .points-dialog-unit select { width: 90px; height: 28px; line-height: 28px; border: 1px solid rgb(204, 204, 204); margin-right: 20px; }
+.points-dialog-unit-required { color: rgb(237, 0, 0) ! important; }
+.points-dialog-unit label { width: 70px; display: inline-block; }
+#shdz .points-dialog-text { padding-left: 4px; }
+.points-dialog-text2 { padding-left: 68px ! important; }
+.points-dialog-error { color: rgb(237, 0, 0); position: absolute; display: none; }
+.error-1 { top: 63px; left: 100px; }
+.error-2 { top: 116px; left: 100px; }
+.error-3 { top: 166px; left: 100px; }
+#content { background-color: rgb(245, 245, 245); }
+#detail { padding-top: 0px ! important; background-color: rgb(245, 245, 245) ! important; margin-bottom: 20px ! important; }
+#detail .product-intro { background-color: rgb(255, 255, 255); padding-top: 0px ! important; padding-bottom: 0px ! important; height: 460px; overflow: hidden; }
+.product-detail { background-color: rgb(245, 245, 245) ! important; border-bottom: 1px solid rgb(234, 234, 234); }
+#points-bread-crumb { padding-top: 30px; padding-bottom: 24px; color: rgb(131, 131, 131); font-size: 14px; line-height: 14px; }
+#points-bread-crumb .points-rows { height: 14px; overflow: hidden; }
+#points-bread-crumb a { color: rgb(131, 131, 131); line-height: 14px; text-decoration: none; }
+#points-bread-crumb a:hover { text-decoration: underline ! important; }
+#points-bread-crumb .points-wrapper { background-color: rgb(245, 245, 245); }
+#jfqr { width: 360px; }
+#jfqr .points-dialog-content { padding-bottom: 30px; }
+#jfqr .points-dialog-unit { width: auto; font-size: 16px; padding-left: 30px; padding-right: 30px; }
+#jfqr .points-dialog-text span { color: rgb(3, 183, 136); }
+#jfqr .dialogCancel { background-color: rgb(204, 204, 204); }
+#jfqr .dialogConfirm { margin-right: 30px; }

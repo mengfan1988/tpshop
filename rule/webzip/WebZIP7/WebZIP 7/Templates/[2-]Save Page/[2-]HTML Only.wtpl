@@ -1,0 +1,7 @@
+[Template]
+Template Name=Save Page -> HTML Only
+Description=Save the HTML of this page only. No images, sounds, flash or other files are downloaded or saved.
+File Types=.htm,.html,.shtm,.shtml,.asp,.aspx,.css,.xml,.xsl,.cfm,.htx,.js,.nsf,.phtml,.frm,.nsf,.jsp,.php,.php3,.wml
+Page Location=2
+Resource Location=2
+Depth=0

@@ -1,0 +1,240 @@
+<extend name="public/base" />
+<block name='link'>
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/layout_shopcar.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/shopcart_shopcar.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/buy-process_shopcar.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/global_shopcar.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/dialog_shopcar.css">
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.1.4.2-min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/Calculation.js"></script>
+</block>
+<block name="shopcar">
+    <div id="content" class="cl">
+        <div class="wrapper">
+            <div class="buy-steps"></div>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="prod-list">
+                    <table class="order-table shop-cart" id="j_ShowTable" cellpadding="0">
+                        <thead>
+                            <tr class="gwc_tb1">
+                                <th width="35" class="td-check"><input class=" j_Select item-checkbox allselect" type="checkbox"></th>
+                                <th width="155" style="text-align: left"><label for="j_selectAll">全选</label></th>
+                                <th style="text-align: left">商品名称</th>
+                                <th width="120">价格（元）</th>
+                                <th width="130">数量</th>
+                                <th width="120">优惠</th>
+                                <th width="128">小计（元）</th>
+                                <th width="120">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="j_ItemTBody">
+						<foreach name="{res}" item="vo">
+                                <tr class="prod-line gwc_tb2">  
+                                    <td class="td-check">
+                                        <label><input id="newslist-1" type="checkbox" class="item-checkbox j_ItemCheckbox" name="newslist" value="2071"></label>
+                                    </td>
+                                    <td class="prod-pic">
+                                        <a class="figure" href="http://shop.vivo.com.cn/product/208" target="_blank"><img src="{$vo['pic']} " alt=""></a>
+                                    </td>
+                                    <td class="prod-name">
+                                        <a class="figure" href="http://shop.vivo.com.cn/product/208" target="_blank">{$vo['phoneName']}</a>
+                                        <br>{$vo['color']}
+                                    </td>
+                                    <td>￥{$vo['price']}</td>
+                                    <td><span class="number-box">
+                                        <a id="min1" class="reduce-num j_ReduceNum" href="{:U(Car/decNum),['id'=>$vo['id']]}">-</a>
+                                        <input id="text_box1" type="text" class="prod-num j_ItemNum" name="shopcartProductNum" value="{$vo['num']}" title="请输入购买量">
+                                        <a id="add1" class="add-num j_AddNum" href="{:U(Car/addNum),['id'=>$vo['id']]}">+</a></span>
+                                    </td>
+                                   <td class="item-privilege j_ItemPrivilege">0.00</td>
+                                    
+                                    <td id="total1" class="tot total-price item-total-price j_ItemTotalPrice">{$vo['price']*$vo['num']}</td>
+                                    <td>
+                                        <a href=" " class="favorite j_Favorite" skuid="2071">收藏</a>
+                                         | <span id='del' data-id="{$v.id}" class="j_DelSingle" skuid="2071">删除</span></td>
+                                </tr>
+
+                                </tbody>
+                    </table>
+                    <ul class="price-list">
+                        <li class="total-price">商品总价：<span class="price"><dfn>¥{:U('Car/tol')} </dfn><span id="j_ItemsSum"> </span></span></li>
+                        <li class="discount-price">优惠：<span class="price">-<dfn>¥0.00</dfn><span id="j_ItemsPrivilege"> </span></span></li>
+                    </ul>
+                    <div class="option-box">
+                        <div class="option-operation">
+                            <ul>
+                                <li><label><input class="allselect" type="checkbox"> 全选</label></li>
+                                <li><a class="j_DelMultiple" href="{:U('Car/clear')}">删除全选商品</a></li>
+                                <li><a class="j_FavoriteMultiple" href="javascript:void(0);">移入收藏夹</a></li>
+                            </ul>
+                        </div>
+                        <div class="real-price">已选商品<em><span id="shuliang">1</span></em>件，合计（不含运费）：<span class="price"><dfn>¥</dfn><span id="zong1">68.00</span></span>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <button class="btn-cancel btn-goshopping j_GoShopping" title="继续购物">
+                            <a href="{:U('Goods/showGoods')}">继续购物</a>
+                        </button>
+                        <button id='jz2' class="btn-confirm btn-submit j_BtnConfirm" href="" title="去结算">去结算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- z-contain -->
+    </div>
+  
+        
+    
+        <script src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+        
+        <script>
+           
+            $(function () {
+			   $('#del').click(function(){
+				 var id = $(this).attr('data-id');
+                 if (confirm('确认删除?') == false) {
+                return;
+            }
+               $.get('__CONTROLLER__/del',{'id':$id});
+								  
+			   });
+            });
+        </script>
+
+		<script type="text/javascript">
+$(document).ready(function () {
+
+	//jquery特效制作复选框全选反选取消(无插件)
+	// 全选        
+	$(".allselect").click(function () {
+		
+		if($(this).attr("checked")){
+			$(".gwc_tb2 input[name=newslist]").each(function () {
+				$(this).attr("checked", true);
+				// $(this).next().css({ "background-color": "#3366cc", "color": "#ffffff" });
+			});
+			GetCount();
+		
+		}
+		else
+   		{
+			$(".gwc_tb2 input[name=newslist]").each(function () {
+				if ($(this).attr("checked")) {
+					$(this).attr("checked", false);
+					//$(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+				} else {
+					$(this).attr("checked", true);
+					//$(this).next().css({ "background-color": "#3366cc", "color": "#000000" });
+				} 
+			});
+			GetCount();
+    
+   		}
+		
+	});
+
+	//反选
+	$("#invert").click(function () {
+		$(".gwc_tb2 input[name=newslist]").each(function () {
+			if ($(this).attr("checked")) {
+				$(this).attr("checked", false);
+				//$(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+			} else {
+				$(this).attr("checked", true);
+				//$(this).next().css({ "background-color": "#3366cc", "color": "#000000" });
+			} 
+		});
+		GetCount();
+	});
+
+	//取消
+	$("#cancel").click(function () {
+		$(".gwc_tb2 input[name=newslist]").each(function () {
+			$(this).attr("checked", false);
+			// $(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+		});
+		GetCount();
+	});
+
+	// 所有复选(:checkbox)框点击事件
+	$(".gwc_tb2 input[name=newslist]").click(function () {
+		if ($(this).attr("checked")) {
+			//$(this).next().css({ "background-color": "#3366cc", "color": "#ffffff" });
+		} else {
+			// $(this).next().css({ "background-color": "#ffffff", "color": "#000000" });
+		}
+	});
+
+	// 输出
+	$(".gwc_tb2 input[name=newslist]").click(function () {
+		// $("#total2").html() = GetCount($(this));
+		GetCount();
+		//alert(conts);
+	});
+});
+//******************
+function GetCount() {
+	var conts = 0;
+	var aa = 0;
+	$(".gwc_tb2 input[name=newslist]").each(function () {
+		if ($(this).attr("checked")) {
+			for (var i = 0; i < $(this).length; i++) {
+				conts += parseInt($(this).val());
+				aa += 1;
+			}
+		}
+	});
+	$("#shuliang").text(aa);
+	$("#zong1").html((conts).toFixed(2));
+	$("#jz1").css("display", "none");
+	$("#jz2").css("display", "block");
+}
+</script>
+
+<!---商品加减算总数---->
+	<script type="text/javascript">
+	$(function () {
+		var t = $("#text_box1");
+		$("#add1").click(function () {
+			t.val(parseInt(t.val()) + 1)
+			setTotal(); GetCount();
+		})
+		$("#min1").click(function () {
+			if(t.val()>0){
+				t.val(parseInt(t.val()) - 1)
+				setTotal(); GetCount();
+			}
+		})
+		function setTotal() {
+
+			$("#total1").html((parseInt(t.val()) * 9).toFixed(2));
+			$("#newslist-1").val(parseInt(t.val()) * 9);
+		}
+		setTotal();
+	})
+	</script>
+	<!---总数---->
+	<script type="text/javascript">
+	$(function () {
+		$(".quanxun").click(function () {
+			setTotal();
+			//alert($(lens[0]).text());
+		});
+		function setTotal() {
+			var len = $(".tot");
+			var num = 0;
+			for (var i = 0; i < len.length; i++) {
+				num = parseInt(num) + parseInt($(len[i]).text());
+
+			}
+			//alert(len.length);
+			$("#zong1").text(parseInt(num).toFixed(2));
+			$("#shuliang").text(len.length);
+		}
+		//setTotal();
+	})
+	</script>
+</block>

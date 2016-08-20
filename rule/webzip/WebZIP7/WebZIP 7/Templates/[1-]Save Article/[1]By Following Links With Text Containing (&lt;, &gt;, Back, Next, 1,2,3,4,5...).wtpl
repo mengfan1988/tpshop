@@ -1,0 +1,8 @@
+[Template]
+Template Name=Save Article -> By Following Links With Text Containing (<, >, back, next, 1, 2, 3, 4, 5 etc...)
+Description=Downloads and saves the current page and all pages this page links to with link text <, >, previous, next, 1, 2, 3, 4 5 etc...
+File Types=.htm,.html,.shtm,.shtml,.asp,.aspx,.css,.xml,.xsl,.cfm,.htx,.js,.nsf,.phtml,.frm,.nsf,.jsp,.php,.php3,.wml,.gif,.jpg,.jpeg,.jpe,.png,.bmp,.wav,.au,.snd,.mid,.midi,.mp3,.ram,.aiff,.mov,.avi,.mpeg,.mpe,.mpg,.spl,.dpr,.swf
+Page Location=1
+Resource Location=2
+Depth=1
+URL Filters Include=[LT]<,[LT]>,[LT]back,[LT]next,[LT]1,[LT]2,[LT]3,[LT]4,[LT]5,[LT]6,[LT]7,[LT]8,[LT]9,[LT]10

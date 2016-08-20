@@ -1,0 +1,67 @@
+<extend name="Index/index" />
+<block name="con">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">赠品/套餐添加</h1>
+        </div>
+
+    </div>  
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <form role="form" action="<{:U('Admin/Gift/insert')}>" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>赠品/套餐标语</label>
+                                    <input name="title" type="text" class="form-control" placeholder="请输入配件名字">
+                                </div>
+                                <div class="form-group">
+                                    <label>请选择添加类型</label>
+                                    <select class="form-control" name="gm">
+                                        
+                                        <option value="0">添加赠品</option>
+                                        <option value="1">添加套餐</option>
+                                       
+                                    </select>
+                                </div>
+                                
+                                
+                                <div class="form-group">
+                                    <label>请选择赠品/套餐商品</label>
+                                    <select class="form-control" name="partId">
+                                        <foreach name="parts" item="vo">
+                                        <option value="<{$vo['id']}>"><{$vo['partname']}></option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>请选择手机</label>
+                                    <select class="form-control" name="phoneId">
+                                        <foreach name="phones" item="vo">
+                                        <option value="<{$vo['id']}>" <{:I('get.phoneid') == $vo['id'] ? selected : '' }>><{$vo['phonename']}></option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                               <div class="form-group">
+                                    <label>赠品/套餐商品数量</label>
+                                    <input name="num" type="text" class="form-control" placeholder="请输入赠品数量">
+                                </div>
+                                 
+                                 <div class="form-group">
+                                    <label>套餐的价格</label>
+                                    <input name="price" type="text" class="form-control" placeholder="0元" value="0">
+                                </div>
+                                <button  class="btn btn-primary">添加</button>
+                                <button type="reset" class="btn btn-default">重置</button>
+                            </form>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</block>

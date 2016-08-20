@@ -1,0 +1,7 @@
+[Template]
+Template Name=Save Directory -> Images Only
+Description=Save all images found on pages in the current directory.
+File Types=.gif,.jpg,.jpeg,.png,.bmp
+Page Location=0
+Resource Location=2
+Depth=-1

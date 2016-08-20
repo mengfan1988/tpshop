@@ -1,0 +1,7 @@
+[Template]
+Template Name=Save Site -> Images Only
+Description=Save all images found on pages in the current site.
+File Types=.gif,.jpg,.jpeg,.jpe,.png,.bmp
+Page Location=1
+Resource Location=1
+Depth=-1
